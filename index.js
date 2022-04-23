@@ -8,6 +8,13 @@ app.get('/',(req,res)=>{
         name:"Express"
     })
 
+});
+
+app.get('/home',(req,res)=>{
+    res.send( {
+        name:"Express home"
+    })
+
 })
 
 const PORT=process.env.PORT;
