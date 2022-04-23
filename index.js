@@ -17,8 +17,8 @@ app.get('/home',(req,res)=>{
 
 })
 
-const PORT=process.env.PORT;
-app.listen(8000,()=>{
+const PORT=process.env.PORT || 8000;
+app.listen(PORT,()=>{
     console.log('server is running on 8000');
 })
 // Sandeep_@#420
